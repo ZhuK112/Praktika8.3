@@ -1,22 +1,20 @@
-<html>
-<head>
-<title>Завдання 3 - Результат</title>
-</head>
-<body>
-<h1>Завдання 3 - Результат</h1>
 <?php
 $c = $_POST['c'];
 $d = $_POST['d'];
 
+// Перевірка, чи введені числа є цілими
+if (!is_numeric($c) || !is_numeric($d) || !is_int($c + 0) || !is_int($d + 0)) {
+    echo "Введені значення повинні бути цілими числами.";
+    exit;
+}
+
 $sum = $c + $d;
 $product = $c * $d;
-$diff = $c - $d;
+$difference = $c - $d;
 $quotient = $c / $d;
 
-echo "Сума: $sum <br>";
-echo "Добуток: $product <br>";
-echo "Різниця: $diff <br>";
-echo "Частка: $quotient <br>";
+echo "Сума: " . $sum . "<br>";
+echo "Добуток: " . $product . "<br>";
+echo "Різниця: " . $difference . "<br>";
+echo "Частка: " . $quotient . "<br>";
 ?>
-</body>
-</html>
