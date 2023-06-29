@@ -4,14 +4,14 @@
     <title>Обчислення</title>
 </head>
 <body>
-    <form method="POST" action="process.php">
+    <form method="post" action="">
         <label for="c">Число C:</label>
-        <input type="number" name="c" id="c">
-        <br>
+        <input type="number" id="c" name="c" required><br>
+
         <label for="d">Число D:</label>
-        <input type="number" name="d" id="d">
-        <br>
-        <input type="submit" value="Відправити">
+        <input type="number" id="d" name="d" required><br>
+
+        <input type="submit" value="Обчислити">
     </form>
 </body>
 </html>
