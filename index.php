@@ -4,7 +4,7 @@
     <title>Обчислення</title>
 </head>
 <body>
-    <form method="post" action="">
+    <form method="post" action="result.php">
         <label for="c">Число C:</label>
         <input type="number" id="c" name="c" required><br>
 
